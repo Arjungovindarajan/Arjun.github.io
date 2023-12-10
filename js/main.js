@@ -112,24 +112,24 @@
         loop: true,
         items: 1
     });
-    // // Function to increase the visit count
-    // function increaseVisitCount() {
-    //     // Retrieve the current visit count from local storage
-    //     let visitCount = localStorage.getItem('visitCount');
+    // Function to increase the visit count
+    function increaseVisitCount() {
+        // Retrieve the current visit count from local storage
+        let visitCount = localStorage.getItem('visitCount');
 
-    //     // If it's the first visit, initialize the count to 1
-    //     if (!visitCount) {
-    //         visitCount = 1;
-    //     } else {
-    //         // Otherwise, increment the count
-    //         visitCount = parseInt(visitCount) + 1;
-    //     }
+        // If it's the first visit, initialize the count to 1
+        if (!visitCount) {
+            visitCount = 1;
+        } else {
+            // Otherwise, increment the count
+            visitCount = parseInt(visitCount) + 1;
+        }
 
-    //     // Update the local storage and display the count
-    //     localStorage.setItem('visitCount', visitCount);
-    //     document.getElementById('visitCount').innerText = visitCount;
-    // }
+        // Update the local storage and display the count
+        localStorage.setItem('visitCount', visitCount);
+        document.getElementById('visitCount').innerText = visitCount;
+    }
 
-    // // Call the function to increase the visit count when the page loads
-    // window.onload = increaseVisitCount;
+    // Call the function to increase the visit count when the page loads
+    window.onload = increaseVisitCount;
 })(jQuery);
