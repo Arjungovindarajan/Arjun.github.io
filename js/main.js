@@ -132,4 +132,8 @@
 
     // Call the function to increase the visit count when the page loads
     window.onload = increaseVisitCount;
+<<<<<<< HEAD
 })(jQuery);
+=======
+})(jQuery);
+>>>>>>> 4abef98695fdeaf6da35e59cbf4a8f4db305916b
